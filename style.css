@@ -1,0 +1,35 @@
+* {
+  font-family: Tahoma;
+  font-size: 14px;
+  /* This is used to statically control all margins and borders
+     because different browsers can have various defaults.
+     Enable this later when you have time to fix all the
+     problems it creates.
+  margin: 0;
+  padding: 0;
+  */
+}
+
+body {
+  width: 676px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid;
+  font-size: 15px;
+}
+
+#contact-info {
+  text-align: center;
+  white-space: pre;
+}
+
+th[scope="row"] {
+  text-align: right;
+}
