@@ -1,0 +1,7 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - sh deploy-files.sh
+      - wait
+      - aws cloudfront create-invalidation --distribution-id EL506D0GVUJRY --paths '/*'
