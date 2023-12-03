@@ -14442,6 +14442,28 @@ div#featured-project-carousel {
     font-size: 24px;
   }
 }
+.personal-experience-inner .content .additionaltitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 62px;
+  padding-top: 45px;
+  color: var(--color-lightn);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .personal-experience-inner .content .additionaltitle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .personal-experience-inner .content .additionaltitle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .personal-experience-inner .content .additionaltitle {
+    font-size: 24px;
+  }
+}
 .personal-experience-inner .experience-list {
   padding-left: 31px;
   border-left: 5px solid #17191c;
