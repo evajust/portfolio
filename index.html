@@ -59,13 +59,13 @@
                         </a>
                     </li>
                     <li>
-                        <a class="scroll-to" href="#skills">
-                            <i class="las la-shapes"></i> <span>Skills</span>
+                        <a class="scroll-to" href="#services">
+                            <i class="las la-stream"></i> <span>Projects</span> 
                         </a>
                     </li>
                     <li>
-                        <a class="scroll-to" href="#portfolio">
-                            <i class="las la-grip-vertical"></i> <span>Projects</span> 
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>Certifications</span>
                         </a>
                     </li>
                 </ul>
@@ -97,13 +97,13 @@
             </a>
         </li>
         <li>
-            <a class="scroll-to" href="#skills">
-                <span>Certifications</span> <i class="las la-shapes"></i>
+            <a class="scroll-to" href="#services">
+                <span>Projects</span> <i class="las la-stream"></i>
             </a>
         </li>
         <li>
-            <a class="scroll-to" href="#portfolio">
-                <span>Projects</span> <i class="las la-grip-vertical"></i>
+            <a class="scroll-to" href="#skills">
+                <span>Certifications</span> <i class="las la-shapes"></i>
             </a>
         </li>
     </ul>
@@ -156,9 +156,6 @@
                     <div class="custom-container">
                         <div class="hero-content content-width">
                             <div class="section-header">
-                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-home"></i> Introduction
-                                </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>Justin Evans</span><p>Network Automation Engineer</p></h1>
                             </div>
                             <p class="scroll-animation" data-animation="fade_from_bottom">
@@ -167,7 +164,7 @@
                                 team needs to spend at the cli, so we can troubleshoot
                                 faster and limit configuration errors.
                             </p>
-                            <a href="#portfolio" 
+                            <a href="#services" 
                                 class="go-to-project-btn scroll-to scroll-animation" 
                                 data-animation="rotate_up">
                                 <img src="./assets/images/round-text.png" alt="Rounded Text">
@@ -182,9 +179,6 @@
                     <div class="custom-container">
                         <div class="resume-content content-width">
                             <div class="section-header">
-                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-briefcase"></i> Resume
-                                </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Education & <span>Experience</span></h1>
                             </div>
         
@@ -221,15 +215,61 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Projects Section -->
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>Projects</span></h1>
+                            </div>
+        
+                            <div class="services-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lab la-aws"></i>
+                                    <h2>Hosted on AWS</h2>
+                                    <p>This page is hosted on AWS via a static web page in S3 and distributed through CloudFront.
+                                       The files are sourced from a personal Git repository. Once changes are made, a build process
+                                       will be started through CodePipeline to push the changes to S3. At the end of the build process,
+                                       a Lambda function is invoked to clear the CloudFront cache.</p>
+                                    <span class="projects"><a href="https://github.com/evajust/resume" target="_blank">Resume Repository</a></span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
+                                    <h2>Network Config Generator</h2>
+                                    <p>An example of how to build a config management system for an organization. Network engineers
+                                       can focus on only setting variables for creating a router configuration, and the entire configuration
+                                       will be generated. The system is modular to reduce the amount of repeated code as much as possible.
+                                       New policies can be implemented by modifying a single module that will then generate a new configuration
+                                       for all routers in the network.</p>
+                                    <span class="projects"><a href="https://github.com/evajust/config-builder" target="_blank">Config Generator Repository</a></span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lab la-python"></i>
+                                    <h2>View Counter</h2>
+                                    <p>The page view counter is created with a Python script in AWS Lambda that communicates with
+                                       DynamoDB to both keep retrieve and track the number of page views.</p>
+                                    <span class="projects"><a href="https://github.com/evajust/lambda-functions" target="_blank">Lambda Function Repository</a></span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-sitemap"></i>
+                                    <h2>Network Automation Labs</h2>
+                                    <p>Examples of various ways I can set up automated configuration deployments for network devices.
+                                       These methods include both Ansible playbooks and Python scripts. I also demonstrate how Jinja2
+                                       can be used to create templates for both CLI and NETCONF configurations.</p>
+                                    <span class="projects"><a href="https://github.com/evajust/ccnp_sp_labs" target="_blank">Automation Lab Repository</a></span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
         
                 <!-- Certifications Section -->
                 <section class="skills-area page-section scroll-to-page" id="skills">
                     <div class="custom-container">
                         <div class="skills-content content-width">
                             <div class="section-header">
-                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-shapes"></i> my certifications
-                                </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>Certifications</span></h1>
                             </div>
         
@@ -272,120 +312,6 @@
                     </div>
                 </section>
         
-                <!-- Portfolio Section -->
-                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
-                    <div class="custom-container">
-                        <div class="portfolio-content content-width">
-                            <div class="section-header">
-                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-grip-vertical"></i> portfolio
-                                </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>Projects</span></h1>
-                            </div>
-        
-                            <div class="row portfolio-items">
-                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="portfolio-item portfolio-full">
-                                        <div class="portfolio-item-inner">
-                                            <img src="./assets/images/project-aws.png" alt="Portfolio">
-                                            <ul class="portfolio-categories">
-                                                <li>
-                                                    <a href="">AWS</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">CI/CD</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Lambda</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h2><a href="">Website Hosted on AWS</a></h2>
-                                    </div>
-                                </div>
-        
-                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
-                                    <div class="portfolio-item portfolio-half">
-                                        <div class="portfolio-item-inner">
-                                            <img src="./assets/images/project-net-auto.png" alt="Portfolio">
-                                            <ul class="portfolio-categories">
-                                                <li>
-                                                    <a href="">Ansible</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">NETCONF</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Python</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h2><a href="">Network Automation Labs</a></h2>
-                                    </div>
-                                </div>
-        
-                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
-                                    <div class="portfolio-item portfolio-half">
-                                        <div class="portfolio-item-inner">
-                                            <img src="./assets/images/project-config-gen.png" alt="Portfolio">
-                                            <ul class="portfolio-categories">
-                                                <li>
-                                                    <a href="">Python</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Jinja2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Regex</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h2><a href="">Config Generator</a></h2>
-                                    </div>
-                                </div>
-                                <!-- To Implement Later
-                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="portfolio-item portfolio-half">
-                                        <div class="portfolio-item-inner">
-                                            <a href="./assets/images/portfolio4.jpg" data-lightbox="example-1">
-                                                <img src="./assets/images/portfolio4.jpg" alt="portfolio">
-                                            </a>
-        
-                                            <ul class="portfolio-categories">
-                                                <li>
-                                                    <a href="">Figma</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">React</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h2><a href="">Hinterland - Real Estate Site Redesign</a></h2>
-                                    </div>
-                                </div>
-        
-                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="portfolio-item portfolio-half">
-                                        <div class="portfolio-item-inner">
-                                            <a href="./assets/images/portfolio5.jpg" data-lightbox="example-1">
-                                                <img src="./assets/images/portfolio5.jpg" alt="portfolio">
-                                            </a>
-        
-                                            <ul class="portfolio-categories">
-                                                <li>
-                                                    <a href="">Framer</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h2><a href="">Lewis Portfolio Framer Template</a></h2>
-                                    </div>
-                                </div>
-                                -->
-                            </div>
-        
-                        </div>
-                    </div>
-                </section>
         
             </div>
         </div>
