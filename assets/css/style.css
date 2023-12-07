@@ -961,6 +961,9 @@ body .body-overlay {
 .services-items .service-item:hover h2 a {
     color: var(--primary_color);
 }
+.services-items .service-item a {
+    color: #fff
+}
 .services-items .service-item p {
     font-size: 14px;
     color: #999999;
