@@ -228,35 +228,52 @@
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                     <i class="lab la-aws"></i>
                                     <h2>Hosted on AWS</h2>
-                                    <p>This page is hosted on AWS via a static web page in S3 and distributed through CloudFront.
+                                    <p>
+                                       This page is hosted on AWS via a static web page in S3 and distributed through CloudFront.
                                        The files are sourced from a personal Git repository. Once changes are made, a build process
                                        will be started through CodePipeline to push the changes to S3. At the end of the build process,
-                                       a Lambda function is invoked to clear the CloudFront cache.</p>
+                                       a Lambda function is invoked to clear the CloudFront cache.
+                                    </p>
                                     <span class="projects"><a href="https://github.com/evajust/resume" target="_blank">Resume Repository</a></span>
                                 </div>
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                     <i class="las la-code"></i>
+                                    <h2>Infrastructure as Code</h2>
+                                    <p>
+                                       The AWS infrastructure for this website is created and managed with Terraform. The main Terraform template
+                                       can be viewed to get insight into how these AWS resources are configured.
+                                    </p>
+                                    <span class="projects"><a href="https://github.com/evajust/terraform" target="_blank">Terraform Repository</a></span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
                                     <h2>Network Config Generator</h2>
-                                    <p>An example of how to build a config management system for an organization. Network engineers
+                                    <p>
+                                       An example of how to build a config management system for an organization. Network engineers
                                        can focus on only setting variables for creating a router configuration, and the entire configuration
                                        will be generated. The system is modular to reduce the amount of repeated code as much as possible.
                                        New policies can be implemented by modifying a single module that will then generate a new configuration
-                                       for all routers in the network.</p>
+                                       for all routers in the network.
+                                    </p>
                                     <span class="projects"><a href="https://github.com/evajust/config-builder" target="_blank">Config Generator Repository</a></span>
                                 </div>
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                     <i class="lab la-python"></i>
                                     <h2>View Counter</h2>
-                                    <p>The page view counter is created with a Python script in AWS Lambda that communicates with
-                                       DynamoDB to both keep retrieve and track the number of page views.</p>
+                                    <p>
+                                       The page view counter is created with a Python script in AWS Lambda that communicates with
+                                       DynamoDB to both keep retrieve and track the number of page views.
+                                    </p>
                                     <span class="projects"><a href="https://github.com/evajust/lambda-functions" target="_blank">Lambda Function Repository</a></span>
                                 </div>
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                     <i class="las la-sitemap"></i>
                                     <h2>Network Automation Labs</h2>
-                                    <p>Examples of various ways I can set up automated configuration deployments for network devices.
+                                    <p>
+                                       Examples of various ways I can set up automated configuration deployments for network devices.
                                        These methods include both Ansible playbooks and Python scripts. I also demonstrate how Jinja2
-                                       can be used to create templates for both CLI and NETCONF configurations.</p>
+                                       can be used to create templates for both CLI and NETCONF configurations.
+                                    </p>
                                     <span class="projects"><a href="https://github.com/evajust/ccnp_sp_labs" target="_blank">Automation Lab Repository</a></span>
                                 </div>
                             </div>
